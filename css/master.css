@@ -1,0 +1,210 @@
+/* Ceci est un commentaire en CSS - Les navigateurs ignorent les commentaires.
+De cette manière nous pouvons laisser des messages pour d'autres codeurs et des explications de ce que nous avons fait. */
+
+/* Dans les 4 selectors suivants nous allons travailler sur la navigation de notre page.
+
+Nous découvrons ici la possibilité d'utiliser des selectors composés ex : header ul  Ceci permet, par exemple, de cibler les elements de la liste du header sans affecter ceux du footer.
+ */
+ @import url('https://fonts.googleapis.com/css?family=Anton|Mali|Oswald');
+ @import url('https://fonts.googleapis.com/css?family=Anton|Lobster|Mali|Oswald');
+ @import url('https://fonts.googleapis.com/css?family=Charmonman');
+@import url('https://fonts.googleapis.com/css?family=Charmonman|Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Charmonman|Indie+Flower|Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Abhaya+Libre|Cedarville+Cursive|Cormorant|Jura|Niconne|Niramit');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Nanum+Myeongjo');
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC');
+@import url('https://fonts.googleapis.com/css?family=K2D|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Anton|Hind');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+header {
+  background: rgb(31, 68, 11);
+  padding: 12px;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header li {
+font-family: 'Viga', sans-serif;
+  display: inline-block;
+  border: 1px solid #ffffff;
+}
+
+header a {
+  text-decoration: none;
+  color : #ffffff;
+  padding: 12px;
+  display: block;
+}
+
+/* A noter ici :
+1. L'utilisation d'une class sur la div, nous la ciblons ici dans la CSS au moyen d'un point .
+2. l'utilisation de background image et de background size
+3. une hauteur minimal à la div. (pour comprendre ce qu'est une VH : https://css-tricks.com/the-lengths-of-css/)
+*/
+.hero {
+  background: rgb(05, 0, 0) url('images/fables.jpg') top center no-repeat;
+  color : #fff;
+  background-size : cover;
+  min-height: 100vh;
+}
+.hero h1 {
+  text-align: center;
+font-family: 'Viga', sans-serif;
+font-size: 60px;
+color:white;
+padding-top: 120px;
+justify-content: center;
+  align-items: center;
+}
+
+
+/* Sur les sections :
+1. Nous utilisons encore une hauteur minimale pour faciliter la lecture et le rythme vertical de la page.
+2. Nous utilsons des classes pour permettre d'aleterner visuellement les sections.
+*/
+section {
+  min-height: 90vh;
+  padding: 42px;
+}
+
+#section01 {
+  background: rgb(173, 12, 11) url('images/image01".jpg') top center no-repeat;
+  color: black;
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display:flex;
+  align-items: center;
+}
+
+#section01 h1{
+  font-family: 'Fjalla One', sans-serif;
+  color: rgb(173, 12, 11);
+
+}
+#section01 p{
+  font-family: 'Hind', sans-serif;
+  color: #fff;
+  }
+
+#section02 {
+  background: rgb(134, 0, 0) url('images/image09.jpg') top center no-repeat;
+  color: black;
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display:flex;
+  align-items: center;
+  font-family:'Lobster', sans-serif;
+}
+
+#section02 h1{
+  font-family: 'Playfair Display SC', sans-serif;
+color: #fff;
+}
+
+#section02 p{
+  font-family: 'Nanum Myeongjo', sans-serif;
+  color: #fff;
+  }
+
+
+
+#section03 {
+  background: url('images/image023.jpg') top center no-repeat;
+  color: black;
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display:flex;
+  align-items: center;
+}
+
+#section03 h1{
+  font-family: 'K2D', sans-serif;
+  color: #fff;
+}
+#section03 p{
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+
+}
+/* Nous souhaitons que les images soient responsives... c'est à dire n'éxcèdent pas une certaine largeur ET se redimensionnent avec leur parent */
+
+#section04 {
+  background: url('images/image05.jpg') top center no-repeat;
+  color: #FFFFFF;
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display:flex;
+  align-items: center;
+  }
+
+ #section04 h1{
+   font-family: 'Anton', sans-serif;
+   color: #fff ;
+
+}
+
+#section05 {
+  background: url('images/image0987.jpg') top center no-repeat;
+  color: #FFFFFF;
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  display:flex;
+  align-items: center;
+  }
+    #section05 h1{
+      font-family: 'Anton', sans-serif;
+      color: rgba(255, 0, 0, 0.5);
+
+   }
+
+.image-block {
+
+.image-block img {
+  width : 100%;
+display:block;
+}
+
+figcaption {
+  font-family: 'Fahkwang', serif;
+  font-style: italic;
+
+}
+
+footer {
+  min-height: 600px;
+  background: #000;
+  color : #fff;
+}
+
+
+/*
+
+// Small devices
+
+// Medium devices (landscape phones, 576px and up)
+@media (min-width: 640px) { ... }
+
+// Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// Extra large devices
+
+@media (min-width: 1440px) { ... }
+
+*/
